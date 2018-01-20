@@ -1,0 +1,24 @@
+.nav__list:before,
+.menu-acco:before,
+.order__form:before,
+.order__form-row:before,
+.reviews__list:before,
+.team-acco__content:before,
+.nav__list:after,
+.menu-acco:after,
+.order__form:after,
+.order__form-row:after,
+.reviews__list:after,
+.team-acco__content:after {
+	content: "";
+	display: table;
+}
+
+.nav__list:after,
+.menu-acco:after,
+.order__form:after,
+.order__form-row:after,
+.reviews__list:after,
+.team-acco__content:after {
+	clear: both;
+}
