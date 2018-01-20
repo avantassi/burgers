@@ -1,6 +1,6 @@
-@import "css/fonts.scss";
-@import "css/mixins.scss";
-@import "css/nav.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "nav.scss";
 
 *{
 	box-sizing: border-box;
@@ -83,7 +83,7 @@ p {
 }
 
 .section-main {
-	background: url("img/decor/bg-main.jpg") center center no-repeat;
+	background: url("../img/decor/bg-main.jpg") center center no-repeat;
 	background-size: cover;
 }
 
