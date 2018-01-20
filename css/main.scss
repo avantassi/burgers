@@ -1,0 +1,174 @@
+@import "fonts.scss";
+@import "mixins.scss";
+@import "nav.scss";
+
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-size: 14px;
+	font-family: 'ub-light';
+	color: #2f3234;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+
+.container{
+	margin: 0 auto;
+	width: 940px;
+}
+
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.section{
+	min-height: 650px;
+}
+
+.section-main__title{
+	color: #f9b43b;
+	font-size: 72px;
+	font-family: 'gagalin';
+}
+
+.header{
+	padding-top: 10px;
+}
+
+.logo{
+	float: left;
+	width: 30%;
+}
+
+.header__menu{
+	float: left;
+	width: 70%;
+	padding-top: 10px;
+}
+
+.section-main {
+	background: url("../img/decor/bg-main.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+.hero .container {
+    position: static;
+}
+
+.hero__content:before,
+.hero__content:after {
+    content: "";
+    display: table;
+}
+
+.hero__content:after {
+    clear: both;
+}
+
+.hero__container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+.hero__left {
+    float: left;
+    width: 50%;
+}
+
+.hero__right {
+    float: left;
+    width: 50%;
+    padding-top: 115px;
+}
+
+.hero__desc {
+    font-size: 65px;
+    color: white;
+    font-family: 'Conv_Lifehack Medium';
+    text-transform: lowercase;
+    line-height: 1em;
+}
+
+.hero__img {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.down-arrow {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    height: 14px;
+    margin-left: -15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    height: 60px;
+}
+
+.down-arrow:hover svg {
+    margin-top: -15px;
+    width: 35px;
+    height: 35px;
+}
+
+.down-arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
