@@ -1,0 +1,61 @@
+.best {
+	background: url("../img/decor/bg-best.jpg") center center no-repeat;
+	background-size: cover;
+	text-align: center;
+
+	&__item{
+		width: 33%;
+		float: left;
+		margin-top: 180px;
+		position: relative;
+
+		&--meat:before{
+			content: "";
+			background-image: url("../img/icons/meat.svg");
+			width: 97px;
+			height: 90px;
+			display: inline-block;
+			position: absolute;
+			top: -135px;
+			right: 33%;
+		}
+
+		&--natural:before{
+			content: "";
+			background-image: url("../img/icons/natural.svg");
+			width: 88px;
+			height: 76px;
+			display: inline-block;
+			position: absolute;
+			top: -135px;
+			right: 33%;
+		}
+
+		&--hand:before{
+			content: "";
+			background-image: url("../img/icons/hand.svg");
+			width: 73px;
+			height: 86px;
+			display: inline-block;
+			position: absolute;
+			top: -135px;
+			right: 33%;
+		}
+	}
+
+	&__title{
+		font-size: 24px;
+		font-family: 'lifehack';
+		color: #2f3234;
+	}
+
+	&__descr{
+		font-size: 14px;
+		font-family: 'ub-light';
+		color: #2f3234;
+		line-height: 28px;
+	}
+}
+
+
+

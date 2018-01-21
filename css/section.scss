@@ -1,0 +1,16 @@
+.section {
+	min-height: 650px;
+	height: 100vh;
+	position: relative;
+
+	&__title{
+		color: #f9b43b;
+		font-size: 72px;
+		font-family: 'gagalin';
+
+		&--black{
+			color: #2f3234;
+			margin-top: 140px;
+		}
+	}
+}
