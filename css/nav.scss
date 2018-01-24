@@ -1,7 +1,5 @@
-.nav-menu{
-	width: 100%;
+.nav{
 	display: inline-block;
-	vertical-align: middle;
 	padding-top: 10px;
 }
 
@@ -45,11 +43,5 @@
 
 	&:hover{
 		text-decoration: underline;
-	}
-
-	&--order{
-		background-color: #e45028;
-		padding: 10px 15px;
-		border-radius: 5px;
 	}
 }

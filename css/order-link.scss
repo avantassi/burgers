@@ -1,0 +1,26 @@
+.order-link{
+	background-color: #e45028;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: darken(#e45028, 10%);
+		transition: .3s;
+	}
+
+	&--more{
+		background-color: #2f3234;
+		-webkit-transition: .3s;
+		transition: .3s;
+
+		&:hover{
+			background-color: #1f2122;
+		}
+	}
+}
+
+
