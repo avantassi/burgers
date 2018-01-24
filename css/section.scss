@@ -11,7 +11,13 @@
 
 		&--black{
 			color: #2f3234;
-			margin-top: 140px;
+		}
+
+		&--small{
+			font-size: 65px;
+			color: #fff;
+			font-family: 'lifehack';
+			text-transform: lowercase;
 		}
 	}
 }
