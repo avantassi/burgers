@@ -1,0 +1,41 @@
+.footer {
+	background: url("../img/decor/bg-footer.jpg") 100% no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	padding: 20px 0;
+}
+
+.container--footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.adress{
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+.phone{
+	text-decoration: none;
+	color: #e45028;
+	font-family: 'ub-bold';
+}
+
+.social{
+	// display: flex;
+	// justify-content: space-between;
+	// margin: auto;
+	// flex-direction: row;
+
+	&__list{
+		display: flex;
+	}
+
+	&__link{
+		width: 20px;
+		height: 20px;
+	}
+}
