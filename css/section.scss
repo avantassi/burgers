@@ -1,6 +1,5 @@
 .section {
-	min-height: 650px;
-	height: 100vh;
+	min-height: 100vh;
 	min-width: 940px;
 	position: relative;
 	display: flex;
@@ -20,6 +19,14 @@
 			color: #fff;
 			font-family: 'lifehack';
 			text-transform: lowercase;
+		}
+
+		&--white{
+			color: #fff;
+		}
+
+		&--center{
+			text-align: center;
 		}
 	}
 }

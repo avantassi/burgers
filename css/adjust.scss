@@ -31,8 +31,7 @@ p {
 .container{
 	margin: 0 auto;
 	width: 940px;
-	// display: flex;
-	// align-items: center;
+	// min-height: 650px;
 
 	&:after{
 		content: "";

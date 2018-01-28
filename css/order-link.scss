@@ -6,6 +6,8 @@
 	text-decoration: none;
 	font-size: 13px;
 	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
 
 	&:hover{
 		background-color: darken(#e45028, 10%);
