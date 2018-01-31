@@ -8,9 +8,14 @@
 	padding: 20px 0;
 }
 
-.container--footer{
-	display: flex;
-	justify-content: space-between;
+// .container--footer{
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+
+.contacts, .social{
+	width: 50%;
+	float: left;
 }
 
 .adress{
@@ -25,17 +30,21 @@
 }
 
 .social{
-	// display: flex;
-	// justify-content: space-between;
-	// margin: auto;
-	// flex-direction: row;
+	text-align: right;
+	margin-top: 10px;
 
-	&__list{
-		display: flex;
+	&__item{
+		display: inline-block;
+		margin-left: 10px;
 	}
 
 	&__link{
 		width: 20px;
 		height: 20px;
+		opacity: .3;
+
+		&:hover{
+			opacity: 1;
+		}
 	}
 }
