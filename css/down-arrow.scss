@@ -4,12 +4,12 @@
 	bottom: 20px;
 	left: 50%;
 	width: 60px;
-	margin-left: -15px;
+	margin-left: rem(-15px);
 	transition: .3s;
 	height: 60px;
 
 	&:hover svg{
-		margin-top: -15px;
+		margin-top: rem(-15px);
 		width: 35px;
 		height: 35px;
 	}

@@ -1,17 +1,23 @@
 .header {
-	padding-top: 10px;
+	padding-top: rem(10px);
 	width: 100%;
 	position: absolute;
 	z-index: 1;
+	display: flex;
+	justify-content: space-between;
 
 	&__logo{
 		width: 30%;
-		float: left;
 	}
 
 	&__menu{
-		float: right;
 		width: 70%;
-		padding-top: 10px;
+		padding-top: rem(10px);
+		display: flex;
 	}
+}
+
+.container--header{
+	display: flex;
+	min-height: 0;
 }

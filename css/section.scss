@@ -1,13 +1,14 @@
 .section {
-	min-height: 100vh;
-	min-width: 940px;
+	height: 100vh;
+	min-height: 650px;
+	// max-width: 940px;
 	position: relative;
 	display: flex;
 	align-items: center;
 
 	&__title{
 		color: #f9b43b;
-		font-size: 72px;
+		font-size: rem(72px);
 		font-family: 'gagalin';
 
 		&--black{
@@ -15,7 +16,7 @@
 		}
 
 		&--small{
-			font-size: 65px;
+			font-size: rem(65px);
 			color: #fff;
 			font-family: 'lifehack';
 			text-transform: lowercase;

@@ -1,20 +1,24 @@
 .nav{
-	display: inline-block;
-	padding-top: 10px;
+	padding-top: rem(10px);
+	display: flex;
+	margin-left: auto;
 }
 
 .nav__list{
 	width: 100%;
+	display: flex;
+
+	@include tablets{
+		display: none;
+	}
 }
 
 .nav__item{
 	white-space: nowrap;
-	margin-right: 15px;
-	display: block;
-	float: left;
+	margin-right: rem(15px);
 
 	&:last-child{
-		margin-right: 0;
+		// margin-right: 0;
 
 		&:after{
 			display: none;
@@ -29,13 +33,12 @@
 		height: 4px;
 		border-radius: 50%;
 		background: white;
-		margin-left: 15px;
+		margin-left: rem(15px);
 	}
 }
 
 .nav__link {
-	vertical-align: middle;
-	font-size: 13px;
+	font-size: rem(13px);
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;

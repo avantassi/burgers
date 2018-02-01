@@ -3,6 +3,11 @@
 	background-size: cover;
 	position: relative;
 
+	@include tablets{
+		background: url("../img/decor/bg-menu.jpg") 50% no-repeat;
+		background-size: cover;
+	}
+
 	&__title{
 		position: absolute;
 		top: 10%;
@@ -20,6 +25,14 @@
 .menu-acco__item {
 	float: left;
 	height: 100%;
+}
+
+.menu-acco__content{
+	display: none;
+}
+
+.menu-acco__item.active .menu-acco__content{
+	display: flex;
 }
 
 .menu-acco__item.active .menu-acco__trigger-text {
