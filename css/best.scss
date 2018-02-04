@@ -3,9 +3,23 @@
 	background-size: cover;
 	text-align: center;
 
+	&__list{
+		display: flex;
+		flex-direction: row;
+
+		@include phones{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	@include phones{
+		// display: flex;
+		// flex-direction: column;
+	}
+
 	&__item{
 		width: 33%;
-		float: left;
 		margin-top: rem(180px);
 		position: relative;
 
@@ -18,6 +32,11 @@
 			position: absolute;
 			top: -135px;
 			right: 33%;
+
+				@include phones{
+					top: 0;
+					right: 100%;
+				}
 		}
 
 		&--natural:before{
@@ -29,6 +48,11 @@
 			position: absolute;
 			top: -135px;
 			right: 33%;
+
+				@include phones{
+					top: 0;
+					right: 100%;
+				}
 		}
 
 		&--hand:before{
@@ -40,6 +64,17 @@
 			position: absolute;
 			top: -135px;
 			right: 33%;
+
+				@include phones{
+					top: 0;
+					right: 100%;
+				}
+		}
+
+		@include phones{
+			width: 70%;
+			margin-left: 100px;
+			margin-top: 90px;
 		}
 	}
 

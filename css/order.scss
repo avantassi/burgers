@@ -19,11 +19,22 @@
 			width: 60%;
 			margin-right: 0;
 		}
+
+		@include phones{
+			width: 95%;
+		}
 	}
 
 	&__form-row{
 		margin-bottom: rem(20px);
 		display: flex;
+
+		&--center{
+			@include phones{
+				display: flex;
+				justify-content: center;
+			}
+		}
 	}
 
 	&__form-label{

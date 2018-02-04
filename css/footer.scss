@@ -11,10 +11,20 @@
 .container--footer{
 	display: flex;
 	min-height: 0;
+
+	@include phones{
+		flex-direction: column;
+	}
 }
 
 .contacts, .social{
 	width: 50%;
+
+	@include phones{
+		width: 65%;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .adress{
@@ -33,6 +43,10 @@
 	justify-content: flex-end;
 	text-align: right;
 	margin-top: rem(10px);
+
+	@include phones{
+		justify-content: space-around;
+	}
 
 	&__item{
 		display: inline-block;
