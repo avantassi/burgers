@@ -89,5 +89,9 @@
 		font-family: 'ub-light';
 		color: #2f3234;
 		line-height: rem(28px);
+
+		@include phones{
+			margin-left: 15px;
+		}
 	}
 }

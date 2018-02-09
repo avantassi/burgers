@@ -28,10 +28,11 @@
 		height: 100%;
 		width: 100%;
 		filter: grayscale(100%);
+		object-fit: cover;
 
 		@include tablets{
-			width: 100%;
-			height: auto;
+			// width: 100%;
+			// height: auto;
 			// object-fit: none;
 			// object-position: 50% 50%;
 		}
