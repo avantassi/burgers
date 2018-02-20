@@ -6,16 +6,40 @@
 .burgers-slider{
 	overflow: hidden;
 	display: flex;
+
+	@include tablets{
+		margin-top: 50px;
+		// width: 80%;
+	}
 }
 
 .burgers-slider__item{
 	display: flex;
 	align-items: center;
 	position: relative;
-	min-width: 960px;
 
-		@include tablets{
+	@include tablets{
 		flex-direction: column;
+		margin: auto;
+		// margin-top: 100px;
+		width: 80%;
+	}
+}
+
+.burgers-slider__img{
+	// max-width: 100%;
+	@include tablets{
+		// margin-top: 100px;
+	}
+}
+
+.burgers-slider__img img{
+	max-width: 100%;
+}
+
+.burgers-slider__text{
+	@include tablets{
+		text-align: center;
 	}
 }
 
@@ -24,6 +48,11 @@
 	margin-top: 50px;
 	margin-bottom: 35px;
 	line-height: 24px;
+	width: 95%;
+
+	@include tablets{
+		margin-top: 20px;
+	}
 }
 
 .burgers-slider__price--big{
@@ -116,6 +145,12 @@
 	bottom: 0px;
 	left: 0;
 	opacity: .5;
+
+	@include tablets{
+		bottom: auto;
+		left: auto;
+		right: 0;
+	}
 }
 
 .weight__icon-svg {
@@ -156,10 +191,10 @@
 }
 
 .burgers-slider__prev {
-	left: 10%;
+	left: 0;
 }
 
 .burgers-slider__next {
 	transform: rotate(-90deg);
-	right: 10%;
+	right: 0;
 }

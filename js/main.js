@@ -65,34 +65,38 @@ function init () {
 
 // slider
 
-var prev = document.querySelector('#prev');
-var next = document.querySelector('#next');
-var items = document.querySelector('#items');
+// var prev = document.querySelector('#prev');
+// var next = document.querySelector('#next');
+// var items = document.querySelector('#items');
 
-next.addEventListener("click", function(e) {
-	e.preventDefault();
-	let currentRight = parseInt(getComputedStyle(items).right);
+// next.addEventListener("click", function(e) {
+// 	e.preventDefault();
+// 	let currentRight = parseInt(getComputedStyle(items).right);
 
-	if (!currentRight) {
-		currentRight = 0;
-	}
+// 	if (!currentRight) {
+// 		currentRight = 0;
+// 	}
 
-	if (currentRight < 500) {
-		items.style.right = currentRight + 960 + "px";
-	}
-});
+// 	if (currentRight < 500) {
+// 		items.style.right = currentRight + 960 + "px";
+// 	}
+// });
 
-prev.addEventListener("click", function(e) {
-	e.preventDefault();
-	let currentRight = parseInt(getComputedStyle(items).right);
+// prev.addEventListener("click", function(e) {
+// 	e.preventDefault();
+// 	let currentRight = parseInt(getComputedStyle(items).right);
 
-	if (!currentRight) {
-		currentRight = 0;
-	}
+// 	if (!currentRight) {
+// 		currentRight = 0;
+// 	}
 
-	if (currentRight > 0) {
-		items.style.right = currentRight - 960 + "px";
-	}
+// 	if (currentRight > 0) {
+// 		items.style.right = currentRight - 960 + "px";
+// 	}
+// });
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel();
 });
 
 
