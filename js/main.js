@@ -65,62 +65,47 @@ function init () {
 
 // slider
 
-// var prev = document.querySelector('#prev');
-// var next = document.querySelector('#next');
-// var items = document.querySelector('#items');
-
-// next.addEventListener("click", function(e) {
-// 	e.preventDefault();
-// 	let currentRight = parseInt(getComputedStyle(items).right);
-
-// 	if (!currentRight) {
-// 		currentRight = 0;
-// 	}
-
-// 	if (currentRight < 500) {
-// 		items.style.right = currentRight + 960 + "px";
-// 	}
-// });
-
-// prev.addEventListener("click", function(e) {
-// 	e.preventDefault();
-// 	let currentRight = parseInt(getComputedStyle(items).right);
-
-// 	if (!currentRight) {
-// 		currentRight = 0;
-// 	}
-
-// 	if (currentRight > 0) {
-// 		items.style.right = currentRight - 960 + "px";
-// 	}
-// });
-
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel();
 });
 
-// 
+// one page scroll
 
 $(document).ready(function() {
 	$('#fullpage').fullpage();
 });
 
+// menu accordeon
 
-// const minRight = 0;
-// const maxRight = 600;
-// const step = 960;
-// let currentRight = 0;
+$(document).ready(function() {
+	$('.menu-acco__trigger').click(function() {
+		var dropdown=$(this).parent('.menu-acco__item');
+			if(!dropdown.hasClass('active')) {
+				$('.menu-acco__content').stop().animate({width: '0'}, 1000);
+				$('.menu-acco__item').removeClass('active');
+			dropdown.addClass('active');
+			dropdown.children('.menu-acco__content').stop().animate({width: '550'}, 1000); 
+			} else {
+				$(this).parent('.menu-acco__item').removeClass('active');
+				XX.children('.menu-acco__content').stop().animate({width: '0'}, 1000);
+			}
+		return false;
+	});
+});
 
-// next.addEventListener("click", function() {
-//   if (currentRight < maxRight) {
-//     currentRight += step;
-//     items.style.right = currentRight + "px";
-//   }
-// });
+// team accordeon
 
-// prev.addEventListener("click", function() {
-//   if (currentRight > minRight) {
-//     currentRight -= step;
-//     items.style.right = currentRight + "px";
-//   }
-// });
+$(document).ready(function() {
+	$('.team-acco__trigger').click(function() {
+		var dropdown=$(this).parent('.team-acco__item');
+			if(!dropdown.hasClass('active')) {
+				$('.team-acco__content').slideUp(500);
+				$('.team-acco__item').removeClass('active');
+			dropdown.addClass('active');
+			dropdown.children('.team-acco__content').slideDown(500);
+			} else {
+				$(this).parent('.team-acco__item').removeClass('active');
+			}
+		return false;
+	});
+});
