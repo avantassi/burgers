@@ -99,6 +99,12 @@ $(document).ready(function(){
 	$(".owl-carousel").owlCarousel();
 });
 
+// 
+
+$(document).ready(function() {
+	$('#fullpage').fullpage();
+});
+
 
 // const minRight = 0;
 // const maxRight = 600;
