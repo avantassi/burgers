@@ -115,22 +115,3 @@ $(document).ready(function() {
 $('.hamburger').click(function(){
 	$('.hamburger-nav').fadeToggle();
 });
-
-// var hamburger = document.getElementById('hamburger');
-
-// hamburger.addEventListener('click', function(){
-// 	hamburger.hasClass('active');
-// });
-
-// gamb.addEventListener('click', function() {
-//     if (navigation.classList.contains('header__navigation--active')) {
-//     	document.body.style.overflowY ='auto';
-//     	navigation.classList.remove('header__navigation--active');
-//         gamb.classList.remove('gamb__btn--active')
-//     }
-//     else {
-//     	document.body.style.overflowY ='hidden';
-//         navigation.classList.add('header__navigation--active');
-//         gamb.classList.add('gamb__btn--active')
-//     }
-// });

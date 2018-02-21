@@ -64,6 +64,7 @@
 }
 
 .hamburger-nav{
+	display: none;
 
 	@include tablets{
 		display: none;
